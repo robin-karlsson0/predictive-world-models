@@ -1,0 +1,9 @@
+[submodule "pc-accumulation-lib"]
+	path = pc-accumulation-lib
+	url = https://github.com/robin-karlsson0/pc-accumulation-lib.git
+[submodule "lat_var_bev_pred_model"]
+	path = lat_var_bev_pred_model
+	url = https://github.com/robin-karlsson0/lat_var_bev_pred_model.git
+[submodule "vdvae"]
+	path = vdvae
+	url = https://github.com/robin-karlsson0/vdvae.git
