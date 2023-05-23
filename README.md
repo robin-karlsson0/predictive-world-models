@@ -72,3 +72,24 @@ sh sample_worlds_nuscenes.sh
 A set of sampled plausible worlds will be visualized in the output directory (`out_dir` by default).
 
 ![Predictive world model output on NuScenes](https://github.com/robin-karlsson0/predictive-world-models/assets/34254153/f26adafd-5f08-4ff7-82b7-a12381b68e90)
+
+# File structure
+
+```
+predictive-world-models
+|
+└───lat_var_bev_pred_model/     # Pseudo-GT sample generation
+|   └─── ...
+|
+└───pc-accumulation-lib/        # Observation accumulation framework
+|   └─── ...
+|
+└───vdvae/                      # Predictive world model implementation
+|   └─── ...
+|
+|   datamodule.py               # Reads and pre-processes input samples
+|   download_model_nuscenes.sh  # Downloads model and test sample files
+|   sample_worlds_nuscenes.py   # Runs the world model and save visualizations to disk
+|   sample_worlds_nuscenes.sh   # Script including required environment variables
+|   world_model.py              # World model inference interface
+```
